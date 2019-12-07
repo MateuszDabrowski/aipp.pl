@@ -1,0 +1,8 @@
+# Templates
+article.html
+
+# Sketch files
+*.sketch
+
+# Mac
+.DS_Store
