@@ -129,7 +129,7 @@ legend {
   color: inherit;
   display: table;
   max-width: 100%;
-  padding: 0; /* 3 */
+  padding: 0;
   white-space: normal;
 }
 
@@ -263,6 +263,21 @@ body {
         grid-template-rows: 300px auto 50px;
         grid-template-columns: 3fr 20px 55vw 20px 3fr;
         grid-template-areas: "header left-gutter main right-gutter space""nav left-gutter main right-gutter space""nav left-gutter footer right-gutter space";
+    }
+    @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+        body {
+            grid-template-columns: 4fr 20px 55vw 20px 2fr;
+        }
+    }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+        body {
+            grid-template-columns: 5fr 20px 55vw 20px 1fr;
+        }
+    }
+    @media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
+        body {
+            grid-template-columns: 6fr 20px 55vw 20px 0fr;
+        }
     }
 }
 
