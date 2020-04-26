@@ -599,7 +599,7 @@ p.main-article__anchor-tag {
     grid-row: auto;
 }
 
-.main-article__image img {
+.main-article__image img, .main-article__gallery-image img {
     margin: 20px -40px 0px -40px;
     max-width: 90vw;
     border-style: solid;
@@ -610,6 +610,15 @@ p.main-article__anchor-tag {
 .main-article__image figcaption {
     font-family: var(--sans-serif, sans-serif);
     margin: -5px -30px 20px -30px;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.8em;
+    max-width: 90vw;
+}
+
+.main-article__gallery-image figcaption {
+    font-family: var(--sans-serif, sans-serif);
+    margin: -5px -30px 20px -30px;
     text-align: left;
     font-style: italic;
     font-size: 0.8em;
@@ -617,12 +626,12 @@ p.main-article__anchor-tag {
 }
 
 @media only screen and (min-width: 30em) {
-    .main-article__image img {
+    .main-article__image img, .main-article__gallery-image img {
         margin: 15px -40px 0px -40px;
         max-width: 88vw;
     }
 
-    .main-article__image figcaption {
+    .main-article__image figcaption, .main-article__gallery-image figcaption {
         margin: -5px -40px 15px -40px;
         max-width: 88vw;
     }
@@ -630,27 +639,27 @@ p.main-article__anchor-tag {
 
 @media only screen and (min-width: 40em) {
 
-    .main-article__image img,
-    .main-article__image figcaption {
+    .main-article__image img, .main-article__gallery-image img,
+    .main-article__image figcaption, .main-article__gallery-image figcaption {
         max-width: 86vw;
     }
 }
 
 @media only screen and (min-width: 50em) {
 
-    .main-article__image img,
-    .main-article__image figcaption {
+    .main-article__image img, .main-article__gallery-image img,
+    .main-article__image figcaption, .main-article__gallery-image figcaption {
         max-width: 75vw;
     }
 }
 
 @media only screen and (min-width: 60em) {
-    .main-article__image img {
+    .main-article__image img, .main-article__gallery-image img {
         margin: 15px -40px 0px -40px;
         max-width: 54vw;
     }
 
-    .main-article__image figcaption {
+    .main-article__image figcaption, .main-article__gallery-image figcaption {
         margin: -5px -40px 15px -40px;
         max-width: 54vw;
     }
@@ -658,8 +667,8 @@ p.main-article__anchor-tag {
 
 @media only screen and (min-width: 80em) {
 
-    .main-article__image img,
-    .main-article__image figcaption {
+    .main-article__image img, .main-article__gallery-image img,
+    .main-article__image figcaption, .main-article__gallery-image figcaption {
         max-width: 50vw;
     }
 }
