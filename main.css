@@ -610,7 +610,7 @@ p.main-article__anchor-tag {
 .main-article__image figcaption {
     font-family: var(--sans-serif, sans-serif);
     margin: -5px -30px 20px -30px;
-    text-align: center;
+    text-align: left;
     font-style: italic;
     font-size: 0.8em;
     max-width: 90vw;
