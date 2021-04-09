@@ -673,6 +673,28 @@ p.main-article__anchor-tag {
     }
 }
 
+/* -- Table -- */
+
+.main-article__table {
+    overflow-x: auto;
+    margin: 0;
+}
+
+.main-article__table table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.main-article__table tr, .main-article__table th, .main-article__table td {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e8e8e8;
+    padding: 10px;
+    text-align: left;
+}
+
 /* -- Citations -- */
 
 #main-article blockquote {
