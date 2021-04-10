@@ -317,6 +317,16 @@ strong {
         height: auto;
         max-height: 120px;
     }
+
+    .logo-image__project {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+        max-width: 100%;
+        height: auto;
+        max-height: 120px;
+    }
 }
 
 @media only screen and (min-width: 60em) {
@@ -338,6 +348,12 @@ strong {
         padding: 0px 25px 15px 25px;
         font-weight: var(--normal, 300);
         max-width: 250px;
+    }
+
+    .logo-image__project {
+        max-width: 271px;
+        padding: 25px 0px;
+        height: auto;
     }
 }
 
