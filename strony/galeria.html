@@ -1,94 +1,73 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
+<html lang="pl">
 
 <head>
-    <!-- Metas -->
-    <meta charset="utf-8" />
-    <title>AIPP › Galeria</title>
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="author" content="Paweł Pulchny">
-    <meta http-equiv="pragma" content="no-cache">
-
-    <meta name="author" content="Paweł Pulchny">
-    <meta name="description"
-        content="Jestem architektem i deweloperem z 30-letnim doświadczeniem w projektowaniu architektonicznym, doradztwie oraz przygotowaniu i realizacji inwestycji mieszkaniowych">
-    <meta name="keywords" content="architektura, inwestycje, deweloper, mieszkania, doradztwo">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="referrer" content="unsafe-url">
-
-    <meta itemprop="name" content="AIPP › Galeria">
-    <meta itemprop="image" content="https://aipp.pl/obrazy/android-chrome-512x512.png">
-
+    <title>AIPP › Galeria</title>
+    <meta name="description" content="Galeria zdjęć i wizualizacji zrealizowanych budynków mieszkalnych i osiedli Pawła Pulchnego w Warszawie, Pruszkowie i Józefowie, budowanych od 1999 roku.">
+    <meta name="author" content="Paweł Pulchny">
     <link rel="canonical" href="https://aipp.pl/strony/galeria.html">
 
-    <meta property="og:image" content="https://aipp.pl/obrazy/logotyp-og.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1240">
-    <meta property="og:image:height" content="1240">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:site_name" content="Architektura Inwestycje Paweł Pulchny">
     <meta property="og:url" content="https://aipp.pl/strony/galeria.html">
     <meta property="og:title" content="AIPP › Galeria">
-    <meta property="og:description"
-        content="Jestem architektem i deweloperem z 30-letnim doświadczeniem w projektowaniu architektonicznym, doradztwie oraz przygotowaniu i realizacji inwestycji mieszkaniowych">
+    <meta property="og:description" content="Galeria zdjęć i wizualizacji zrealizowanych budynków mieszkalnych i osiedli Pawła Pulchnego w Warszawie, Pruszkowie i Józefowie, budowanych od 1999 roku.">
+    <meta property="og:image" content="https://aipp.pl/obrazy/galeria/1800/julianowska-1.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1800">
+    <meta property="og:image:height" content="1200">
+    <meta property="og:image:alt" content="Julianowska 26, elewacja frontowa budynku z charakterystycznym łukowym dachem, widok od ulicy">
+    <meta name="twitter:card" content="summary_large_image">
 
-    <!-- Imports -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <link rel="preload" href="/czcionki/raleway-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/czcionki/raleway-400-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/czcionki/raleway-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/czcionki/raleway-700-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" media="screen" href="/main.css">
 
-    <!-- Favicon rules -->
-    <link rel="shortcut icon" sizes="196x196" href="../obrazy/favicon_196.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../obrazy/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="167x167" href="../obrazy/favicon_167.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../obrazy/favicon_152.png">
-    <link rel="icon" type="image/png" sizes="128x128" href="../obrazy/favicon_128.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../obrazy/favicon_32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../obrazy/favicon_16.png">
-    <link rel="manifest" href="../obrazy/site.webmanifest">
-    <link rel="mask-icon" href="../obrazy/safari-pinned-tab.svg" color="#828782">
-    <link rel="shortcut icon" href="../obrazy/favicon.ico">
-
-    <meta name="msapplication-TileColor" content="#828782">
-    <meta name="msapplication-square70x70logo" content="../obrazy/favicon-128.png" />
-    <meta name="msapplication-square150x150logo" content="../obrazy/favicon-270.png" />
-    <meta name="msapplication-TileImage" content="../obrazy/favicon-270.png" />
-    <meta name="msapplication-config" content="none" />
-
+    <link rel="icon" href="/obrazy/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/obrazy/favicon_32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/obrazy/favicon_16.png">
+    <link rel="icon" type="image/png" sizes="196x196" href="/obrazy/favicon_196.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/obrazy/apple-touch-icon.png">
+    <link rel="mask-icon" href="/obrazy/safari-pinned-tab.svg" color="#828782">
+    <link rel="manifest" href="/obrazy/site.webmanifest">
     <meta name="theme-color" content="#828782">
 </head>
-
 <body>
 
     <!-- Sidebar on desktop -->
-    <header role="banner">
-        <h1>
+    <header>
+        <p class="site-logo">
             <a href="/" rel="home">
                 <picture>
                     <!-- Logo created by Marek Jagusiak › jagusiak.eu -->
-                                        <source type="image/png" srcset="../obrazy/logo-horizontal-dark.png 1x, ../obrazy/logo-horizontal-dark-2x.png 2x">
-                    <img id="logo-image" src="../obrazy/logotyp-desktop.png" alt="Architektura Inwestycje Paweł Pulchny" />
+                    <source type="image/webp" srcset="/obrazy/logo-horizontal-dark.webp 1x, /obrazy/logo-horizontal-dark-2x.webp 2x">
+                    <img id="logo-image" src="/obrazy/logo-horizontal-dark.png" srcset="/obrazy/logo-horizontal-dark.png 1x, /obrazy/logo-horizontal-dark-2x.png 2x" width="882" height="400" alt="Architektura Inwestycje Paweł Pulchny">
                 </picture>
             </a>
-        </h1>
+        </p>
 
         <p class="desktop" id="logo-description">Projekty i&nbsp;inwestycje mieszkaniowe</p>
 
-        <nav id="nav-bar">
+        <nav id="nav-bar" aria-label="Menu">
             <label for="nav-bar__toggle">Menu</label>
             <input type="checkbox" id="nav-bar__toggle">
             <ul id="nav-bar__list">
                 <li>
-                    <a href="../strony/dorobek.html">Dorobek</a>
+                    <a href="/strony/dorobek.html">Dorobek</a>
                 </li>
                 <li>
-                    <a href="../strony/galeria.html">Galeria</a>
+                    <a href="/strony/galeria.html">Galeria</a>
                 </li>
                 <li>
-                    <a href="../strony/inwestycje.html">Inwestycje</a>
+                    <a href="/strony/inwestycje.html">Inwestycje</a>
                 </li>
                 <li>
-                    <a href="../strony/kontakt.html">Kontakt</a>
+                    <a href="/strony/kontakt.html">Kontakt</a>
                 </li>
             </ul>
         </nav>
@@ -101,190 +80,191 @@
                 <h1 id="main-article__title">Galeria</h1>
                 <div class="main-article__gallery-item">
                     <h2 id="julianowska" class="main-article__gallery-title">
-                        <a href="../projekty/julianowska.html">Julianowska 26</a>
+                        <a href="/projekty/julianowska.html">Julianowska 26</a>
                     </h2>
                     <figure class="main-article__gallery-image">
-                        <picture>
-                            <source type="image.jpg"
-                                srcset="../obrazy/galeria/thumb-1x/Julianowska-1-thumb-1x.jpg 1x, ../obrazy/galeria/thumb-2x/julianowska-1-thumb-2x.jpg 2x">
-                            <a href="../projekty/julianowska.html"><img src="../obrazy/galeria/thumb-1x/julianowska-1-thumb-1x.jpg"
-                                    alt="Zdjęcie budynku Julianowska 26" /></a>
-                            <figcaption>Budynek mieszkalny wielorodzinny Julianowska&nbsp;26
+                        <a href="/projekty/julianowska.html">
+                            <picture>
+                                <source type="image/webp" srcset="/obrazy/galeria/450/julianowska-1.webp 450w, /obrazy/galeria/900/julianowska-1.webp 900w" sizes="min(90vw, 450px)">
+                                <img src="/obrazy/galeria/450/julianowska-1.jpg" srcset="/obrazy/galeria/450/julianowska-1.jpg 450w, /obrazy/galeria/900/julianowska-1.jpg 900w" sizes="min(90vw, 450px)" width="450" height="300" alt="Julianowska 26, elewacja frontowa budynku z charakterystycznym łukowym dachem, widok od ulicy">
+                            </picture>
+                        </a>
+                        <figcaption>Budynek mieszkalny wielorodzinny Julianowska&nbsp;26
                                 w&nbsp;Warszawie [1999-2000] – 2.000&nbsp;m2&nbsp;PUM</figcaption>
-                        </picture>
-                        <a href="../projekty/julianowska.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
+                        <a href="/projekty/julianowska.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
                     </figure>
                 </div>
                 <div class="main-article__gallery-item">
                     <h2 id="krzywinska" class="main-article__gallery-title">
-                        <a href="../projekty/krzywinska.html">Krzywińska 11</a>
+                        <a href="/projekty/krzywinska.html">Krzywińska 11</a>
                     </h2>
                     <figure class="main-article__gallery-image">
-                        <picture>
-                            <source type="image.jpg"
-                                srcset="../obrazy/galeria/thumb-1x/krzywinska-1-thumb-1x.jpg 1x, ../obrazy/galeria/thumb-2x/krzywinska-1-thumb-2x.jpg 2x">
-                            <a href="../projekty/krzywinska.html"><img src="../obrazy/galeria/thumb-1x/krzywinska-1-thumb-1x.jpg"
-                                    alt="Zdjęcie budynku Krzywińska 26" /></a>
-                            <figcaption>Budynek mieszkalny wielorodzinny Krzywińska&nbsp;11
+                        <a href="/projekty/krzywinska.html">
+                            <picture>
+                                <source type="image/webp" srcset="/obrazy/galeria/450/krzywinska-1.webp 450w, /obrazy/galeria/900/krzywinska-1.webp 900w" sizes="min(90vw, 450px)">
+                                <img src="/obrazy/galeria/450/krzywinska-1.jpg" srcset="/obrazy/galeria/450/krzywinska-1.jpg 450w, /obrazy/galeria/900/krzywinska-1.jpg 900w" sizes="min(90vw, 450px)" width="450" height="300" alt="Krzywińska 11, narożnik elewacji z niebieskimi balustradami balkonów, widok od ulicy" loading="lazy" decoding="async">
+                            </picture>
+                        </a>
+                        <figcaption>Budynek mieszkalny wielorodzinny Krzywińska&nbsp;11
                                 w&nbsp;Warszawie [2000-2001] – 1.200&nbsp;m2&nbsp;PUM</figcaption>
-                        </picture>
-                        <a href="../projekty/krzywinska.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
+                        <a href="/projekty/krzywinska.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
                     </figure>
                 </div>
                 <div class="main-article__gallery-item">
                     <h2 id="lakocinska" class="main-article__gallery-title">
-                        <a href="../projekty/lakocinska.html">Łąkocińska 15</a>
+                        <a href="/projekty/lakocinska.html">Łąkocińska 15</a>
                     </h2>
                     <figure class="main-article__gallery-image">
-                        <picture>
-                            <source type="image.jpg"
-                                srcset="../obrazy/galeria/thumb-1x/lakocinska-1-thumb-1x.jpg 1x, ../obrazy/galeria/thumb-2x/lakocinska-1-thumb-2x.jpg 2x">
-                            <a href="../projekty/lakocinska.html"><img src="../obrazy/galeria/thumb-1x/lakocinska-1-thumb-1x.jpg"
-                                    alt="Zdjęcie budynku Łąkocińska 15" /></a>
-                            <figcaption>Budynek mieszkalny wielorodzinny Łąkocińska&nbsp;15
+                        <a href="/projekty/lakocinska.html">
+                            <picture>
+                                <source type="image/webp" srcset="/obrazy/galeria/450/lakocinska-1.webp 450w, /obrazy/galeria/900/lakocinska-1.webp 900w" sizes="min(90vw, 450px)">
+                                <img src="/obrazy/galeria/450/lakocinska-1.jpg" srcset="/obrazy/galeria/450/lakocinska-1.jpg 450w, /obrazy/galeria/900/lakocinska-1.jpg 900w" sizes="min(90vw, 450px)" width="450" height="675" alt="Łąkocińska 15, narożnik elewacji z łukowym dachem i balkonami" loading="lazy" decoding="async">
+                            </picture>
+                        </a>
+                        <figcaption>Budynek mieszkalny wielorodzinny Łąkocińska&nbsp;15
                                 w&nbsp;Warszawie [2002-2003] – 2.000&nbsp;m2&nbsp;PUM</figcaption>
-                        </picture>
-                        <a href="../projekty/lakocinska.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
+                        <a href="/projekty/lakocinska.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
                     </figure>
                 </div>
                 <div class="main-article__gallery-item">
                     <h2 id="malborska" class="main-article__gallery-title">
-                        <a href="../projekty/malborska.html">„Nad Strugą” Malborska</a>
+                        <a href="/projekty/malborska.html">„Nad Strugą” Malborska</a>
                     </h2>
                     <figure class="main-article__gallery-image">
-                        <picture>
-                            <source type="image.jpg"
-                                srcset="../obrazy/galeria/thumb-1x/malborska-1-thumb-1x.jpg 1x, ../obrazy/galeria/thumb-2x/malborska-1-thumb-2x.jpg 2x">
-                            <a href="../projekty/malborska.html"><img src="../obrazy/galeria/thumb-1x/malborska-1-thumb-1x.jpg"
-                                    alt="Zdjęcie budynku „Nad Strugą” Malborska" /></a>
-                            <figcaption>Zespół zabudowy wielorodzinnej „Nad&nbsp;Strugą” Malborska
+                        <a href="/projekty/malborska.html">
+                            <picture>
+                                <source type="image/webp" srcset="/obrazy/galeria/450/malborska-1.webp 450w, /obrazy/galeria/900/malborska-1.webp 900w" sizes="min(90vw, 450px)">
+                                <img src="/obrazy/galeria/450/malborska-1.jpg" srcset="/obrazy/galeria/450/malborska-1.jpg 450w, /obrazy/galeria/900/malborska-1.jpg 900w" sizes="min(90vw, 450px)" width="450" height="672" alt="Nad Strugą Malborska, wieżowiec widziany od skrzyżowania ulic Malborskiej i Kowalskiego" loading="lazy" decoding="async">
+                            </picture>
+                        </a>
+                        <figcaption>Zespół zabudowy wielorodzinnej „Nad&nbsp;Strugą” Malborska
                                 w&nbsp;Warszawie [2004-2005] – 4.800&nbsp;m2&nbsp;PUM</figcaption>
-                        </picture>
-                        <a href="../projekty/malborska.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
+                        <a href="/projekty/malborska.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
                     </figure>
                 </div>
                 <div class="main-article__gallery-item">
                     <h2 id="hodowlana" class="main-article__gallery-title">
-                        <a href="../projekty/hodowlana.html">Hodowlana 3/5</a>
+                        <a href="/projekty/hodowlana.html">Hodowlana 3/5</a>
                     </h2>
                     <figure class="main-article__gallery-image">
-                        <picture>
-                            <source type="image.jpg"
-                                srcset="../obrazy/galeria/thumb-1x/hodowlana-1-thumb-1x.jpg 1x, ../obrazy/galeria/thumb-2x/hodowlana-1-thumb-2x.jpg 2x">
-                            <a href="../projekty/hodowlana.html"><img src="../obrazy/galeria/thumb-1x/hodowlana-1-thumb-1x.jpg"
-                                    alt="Zdjęcie budynku Hodowlana 3/5" /></a>
-                            <figcaption>Budynek mieszkalny wielorodzinny Hodowlana&nbsp;3/5
+                        <a href="/projekty/hodowlana.html">
+                            <picture>
+                                <source type="image/webp" srcset="/obrazy/galeria/450/hodowlana-1.webp 450w, /obrazy/galeria/900/hodowlana-1.webp 900w" sizes="min(90vw, 450px)">
+                                <img src="/obrazy/galeria/450/hodowlana-1.jpg" srcset="/obrazy/galeria/450/hodowlana-1.jpg 450w, /obrazy/galeria/900/hodowlana-1.jpg 900w" sizes="min(90vw, 450px)" width="450" height="338" alt="Hodowlana 3/5, elewacja frontowa budynku z parkingiem, widok od ulicy" loading="lazy" decoding="async">
+                            </picture>
+                        </a>
+                        <figcaption>Budynek mieszkalny wielorodzinny Hodowlana&nbsp;3/5
                                 w&nbsp;Warszawie [2004] – 1.050&nbsp;m2&nbsp;PUM</figcaption>
-                        </picture>
-                        <a href="../projekty/hodowlana.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
+                        <a href="/projekty/hodowlana.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
                     </figure>
                 </div>
                 <div class="main-article__gallery-item">
                     <h2 id="reymonta" class="main-article__gallery-title">
-                        <a href="../projekty/reymonta.html">Reymonta</a>
+                        <a href="/projekty/reymonta.html">Reymonta</a>
                     </h2>
                     <figure class="main-article__gallery-image">
-                        <picture>
-                            <source type="image.jpg"
-                                srcset="../obrazy/galeria/thumb-1x/reymonta-1-thumb-1x.jpg 1x, ../obrazy/galeria/thumb-2x/reymonta-1-thumb-2x.jpg 2x">
-                            <a href="../projekty/reymonta.html"><img src="../obrazy/galeria/thumb-1x/reymonta-1-thumb-1x.jpg"
-                                    alt="Zdjęcie zespołu budynków Reymonta" /></a>
-                            <figcaption>Zespół zabudowy wielorodzinnej Reymonta
+                        <a href="/projekty/reymonta.html">
+                            <picture>
+                                <source type="image/webp" srcset="/obrazy/galeria/450/reymonta-1.webp 450w, /obrazy/galeria/900/reymonta-1.webp 900w" sizes="min(90vw, 450px)">
+                                <img src="/obrazy/galeria/450/reymonta-1.jpg" srcset="/obrazy/galeria/450/reymonta-1.jpg 450w, /obrazy/galeria/900/reymonta-1.jpg 900w" sizes="min(90vw, 450px)" width="450" height="300" alt="Reymonta, elewacja frontowa zabudowy szeregowej za murem obrośniętym bluszczem" loading="lazy" decoding="async">
+                            </picture>
+                        </a>
+                        <figcaption>Zespół zabudowy wielorodzinnej Reymonta
                                 w&nbsp;Józefowie [2004-2005] – 900&nbsp;m2&nbsp;PUM</figcaption>
-                        </picture>
-                        <a href="../projekty/reymonta.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
+                        <a href="/projekty/reymonta.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
                     </figure>
                 </div>
                 <div class="main-article__gallery-item">
-                    <h2 id="atrium" class="main-article__gallery-title"><a href="../projekty/atrium.html">Atrium</a>
+                    <h2 id="atrium" class="main-article__gallery-title"><a href="/projekty/atrium.html">Atrium</a>
                     </h2>
                     <figure class="main-article__gallery-image">
-                        <picture>
-                            <source type="image.jpg"
-                                srcset="../obrazy/galeria/thumb-1x/atrium-1-thumb-1x.jpg 1x, ../obrazy/galeria/thumb-2x/atrium-1-thumb-2x.jpg 2x">
-                            <a href="../projekty/atrium.html"><img src="../obrazy/galeria/thumb-1x/atrium-1-thumb-1x.jpg" alt="Zdjęcie osiedla Atrium" /></a>
-                            <figcaption>Osiedle Atrium
+                        <a href="/projekty/atrium.html">
+                            <picture>
+                                <source type="image/webp" srcset="/obrazy/galeria/450/atrium-1.webp 450w, /obrazy/galeria/900/atrium-1.webp 900w" sizes="min(90vw, 450px)">
+                                <img src="/obrazy/galeria/450/atrium-1.jpg" srcset="/obrazy/galeria/450/atrium-1.jpg 450w, /obrazy/galeria/900/atrium-1.jpg 900w" sizes="min(90vw, 450px)" width="450" height="301" alt="Atrium, elewacja frontowa budynku od strony ulicy i parkingu" loading="lazy" decoding="async">
+                            </picture>
+                        </a>
+                        <figcaption>Osiedle Atrium
                                 w&nbsp;Pruszkowie [2007-2011] – 9.450&nbsp;m2&nbsp;PUM</figcaption>
-                        </picture>
-                        <a href="../projekty/atrium.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
+                        <a href="/projekty/atrium.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
                     </figure>
                 </div>
                 <div class="main-article__gallery-item">
-                    <h2 id="ws" class="main-article__gallery-title"><a href="../projekty/ws.html">Wiśniowy Sad 1 i 2</a>
+                    <h2 id="ws" class="main-article__gallery-title"><a href="/projekty/ws.html">Wiśniowy Sad 1 i 2</a>
                     </h2>
                     <figure class="main-article__gallery-image">
-                        <picture>
-                            <source type="image.jpg"
-                                srcset="../obrazy/galeria/thumb-1x/ws-1-thumb-1x.jpg 1x, ../obrazy/galeria/thumb-2x/ws-1-thumb-2x.jpg 2x">
-                            <a href="../projekty/ws.html"><img src="../obrazy/galeria/thumb-1x/ws-1-thumb-1x.jpg"
-                                    alt="Zdjęcie osiedla Wiśniowy Sad 1 i 2" /></a>
-                            <figcaption>Osiedle Wiśniowy&nbsp;Sad
+                        <a href="/projekty/ws.html">
+                            <picture>
+                                <source type="image/webp" srcset="/obrazy/galeria/450/ws-1.webp 450w, /obrazy/galeria/900/ws-1.webp 900w" sizes="min(90vw, 450px)">
+                                <img src="/obrazy/galeria/450/ws-1.jpg" srcset="/obrazy/galeria/450/ws-1.jpg 450w, /obrazy/galeria/900/ws-1.jpg 900w" sizes="min(90vw, 450px)" width="450" height="338" alt="Wiśniowy Sad, narożnik budynku z żółtą elewacją i balkonami, widok z dziedzińca" loading="lazy" decoding="async">
+                            </picture>
+                        </a>
+                        <figcaption>Osiedle Wiśniowy&nbsp;Sad
                                 w&nbsp;Warszawie [2008-2011] – 14.100&nbsp;m2&nbsp;PUMiUS</figcaption>
-                        </picture>
-                        <a href="../projekty/ws.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
+                        <a href="/projekty/ws.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
                     </figure>
                 </div>
                 <div class="main-article__gallery-item">
                     <h2 id="swiderska" class="main-article__gallery-title">
-                        <a href="../projekty/swiderska.html">Świderska 1 i 2</a>
+                        <a href="/projekty/swiderska.html">Świderska 1 i 2</a>
                     </h2>
                     <figure class="main-article__gallery-image">
-                        <picture>
-                            <source type="image.jpg"
-                                srcset="../obrazy/galeria/thumb-1x/swiderska-1-thumb-1x.jpg 1x, ../obrazy/galeria/thumb-2x/swiderska-1-thumb-2x.jpg 2x">
-                            <a href="../projekty/swiderska.html"><img src="../obrazy/galeria/thumb-1x/swiderska-1-thumb-1x.jpg"
-                                    alt="Zdjęcie osiedla Świderska 1 i 2" /></a>
-                            <figcaption>Osiedle Świderska
+                        <a href="/projekty/swiderska.html">
+                            <picture>
+                                <source type="image/webp" srcset="/obrazy/galeria/450/swiderska-1.webp 450w, /obrazy/galeria/900/swiderska-1.webp 900w" sizes="min(90vw, 450px)">
+                                <img src="/obrazy/galeria/450/swiderska-1.jpg" srcset="/obrazy/galeria/450/swiderska-1.jpg 450w, /obrazy/galeria/900/swiderska-1.jpg 900w" sizes="min(90vw, 450px)" width="450" height="300" alt="Świderska, tablice z nazwami ulic Świderska i Kard. Wyszyńskiego na skrzyżowaniu" loading="lazy" decoding="async">
+                            </picture>
+                        </a>
+                        <figcaption>Osiedle Świderska
                                 w&nbsp;Józefowie [2007-2008] – 3.300&nbsp;m2&nbsp;PUMiUS</figcaption>
-                        </picture>
-                        <a href="../projekty/swiderska.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
+                        <a href="/projekty/swiderska.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
                     </figure>
                 </div>
                 <div class="main-article__gallery-item">
-                    <h2 id="zabki" class="main-article__gallery-title"><a href="../projekty/zabki.html">Patio Ząbki</a>
+                    <h2 id="zabki" class="main-article__gallery-title"><a href="/projekty/zabki.html">Patio Ząbki</a>
                     </h2>
                     <figure class="main-article__gallery-image">
-                        <picture>
-                            <source type="image.jpg"
-                                srcset="../obrazy/galeria/thumb-1x/zabki-wiz-1-thumb-1x.jpg 1x, ../obrazy/galeria/thumb-2x/zabki-wiz-1-thumb-2x.jpg 2x">
-                            <a href="../projekty/zabki.html"><img src="../obrazy/galeria/thumb-1x/zabki-wiz-1-thumb-1x.jpg"
-                                    alt="Wizualizacja budynku Patio Ząbki" /></a>
-                            <figcaption>Budynek mieszkalny wielorodzinny Patio&nbsp;Ząbki
+                        <a href="/projekty/zabki.html">
+                            <picture>
+                                <source type="image/webp" srcset="/obrazy/galeria/450/zabki-wiz-1.webp 450w, /obrazy/galeria/900/zabki-wiz-1.webp 900w" sizes="min(90vw, 450px)">
+                                <img src="/obrazy/galeria/450/zabki-wiz-1.jpg" srcset="/obrazy/galeria/450/zabki-wiz-1.jpg 450w, /obrazy/galeria/900/zabki-wiz-1.jpg 900w" sizes="min(90vw, 450px)" width="450" height="338" alt="Patio Ząbki, wizualizacja elewacji frontowej budynku z balkonami wzdłuż żywopłotu" loading="lazy" decoding="async">
+                            </picture>
+                        </a>
+                        <figcaption>Budynek mieszkalny wielorodzinny Patio&nbsp;Ząbki
                                 [2008-2011] – 2.350&nbsp;m2&nbsp;PUM</figcaption>
-                        </picture>
-                        <a href="../projekty/zabki.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
+                        <a href="/projekty/zabki.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
                     </figure>
                 </div>
                 <div class="main-article__gallery-item">
                     <h2 id="nmp" class="main-article__gallery-title">
-                        <a href="../projekty/nmp.html">Nowe Miasto Pruszków</a>
+                        <a href="/projekty/nmp.html">Nowe Miasto Pruszków</a>
                     </h2>
                     <figure class="main-article__gallery-image">
-                        <picture>
-                            <source type="image.jpg"
-                                srcset="../obrazy/galeria/thumb-1x/nmp-1-thumb-1x.jpg 1x, ../obrazy/galeria/thumb-2x/nmp-1-thumb-2x.jpg 2x">
-                            <a href="../projekty/nmp.html"><img src="../obrazy/galeria/thumb-1x/nmp-1-thumb-1x.jpg"
-                                    alt="Zdjęcie budynku Nowe Miasto Pruszków" /></a>
-                            <figcaption>Zespół zabudowy wielorodzinnej Nowe Miasto Pruszków
+                        <a href="/projekty/nmp.html">
+                            <picture>
+                                <source type="image/webp" srcset="/obrazy/galeria/450/nmp-1.webp 450w, /obrazy/galeria/900/nmp-1.webp 900w" sizes="min(90vw, 450px)">
+                                <img src="/obrazy/galeria/450/nmp-1.jpg" srcset="/obrazy/galeria/450/nmp-1.jpg 450w, /obrazy/galeria/900/nmp-1.jpg 900w" sizes="min(90vw, 450px)" width="450" height="300" alt="Nowe Miasto Pruszków, narożnik elewacji z czerwoną cegłą klinkierową i balkonami" loading="lazy" decoding="async">
+                            </picture>
+                        </a>
+                        <figcaption>Zespół zabudowy wielorodzinnej Nowe Miasto Pruszków
                                 [2015-2019] – 13.900&nbsp;m2&nbsp;PUMiUS</figcaption>
-                        </picture>
-                        <a href="../projekty/nmp.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
+                        <a href="/projekty/nmp.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
                     </figure>
                 </div>
                 <div class="main-article__gallery-item">
                     <h2 id="future-gardens" class="main-article__gallery-title">
-                        <a href="../projekty/future-gardens.html">Future&nbsp;Gardens / Warzelnicza</a>
+                        <a href="/projekty/future-gardens.html">Future&nbsp;Gardens / Warzelnicza</a>
                     </h2>
                     <figure class="main-article__gallery-image">
-                        <picture>
-                            <source type="image.jpg"
-                                srcset="../obrazy/galeria/thumb-1x/future-gardens-wiz-1-thumb-1x.jpg 1x, ../obrazy/galeria/thumb-2x/future-gardens-wiz-1-thumb-2x.jpg 2x">
-                            <a href="../projekty/future-gardens.html"><img src="../obrazy/galeria/thumb-1x/future-gardens-wiz-1-thumb-1x.jpg"
-                                    alt="Wizualizacja osiedla Future Gardens" /></a>
-                            <figcaption>Osiedle Future&nbsp;Gardens / Warzelnicza
+                        <a href="/projekty/future-gardens.html">
+                            <picture>
+                                <source type="image/webp" srcset="/obrazy/galeria/450/future-gardens-wiz-1.webp 450w, /obrazy/galeria/900/future-gardens-wiz-1.webp 900w" sizes="min(90vw, 450px)">
+                                <img src="/obrazy/galeria/450/future-gardens-wiz-1.jpg" srcset="/obrazy/galeria/450/future-gardens-wiz-1.jpg 450w, /obrazy/galeria/900/future-gardens-wiz-1.jpg 900w" sizes="min(90vw, 450px)" width="450" height="200" alt="Future Gardens / Warzelnicza, wizualizacja wejścia na osiedle i zieleni między budynkami" loading="lazy" decoding="async">
+                            </picture>
+                        </a>
+                        <figcaption>Osiedle Future&nbsp;Gardens / Warzelnicza
                                 [2016-2017] – 13.900&nbsp;m2&nbsp;PUMiUS</figcaption>
-                        </picture>
-                        <a href="../projekty/future-gardens.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
+                        <a href="/projekty/future-gardens.html"><p class="main-article__gallery-text">Wyświetl galerię</p></a>
                     </figure>
                 </div>
             </article>
@@ -294,16 +274,7 @@
 
     <footer>
         <p>
-            <a href="../strony/prywatnosc.html">Polityka prywatności</a>
-        </p>
-
-        <!-- Unsupported browser overlay-->
-        <p id="unsupported-browser" class="desktop">
-            <span style="color:#D94D53">Korzytasz z przestarzałej przeglądarki.</span> Naraża Cię to
-            <span style="color:#D94D53">na niebezpieczeństwo</span>. Zmień przeglądarkę na bezpieczną:
-            <a href="https://www.google.com/chrome/">Chrome</a>
-            lub <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a>.
-            <span style="color:#D94D53">Pomóć budować bezpieczny i nowoczesny internet</span>.
+            <a href="/strony/prywatnosc.html">Polityka prywatności</a>
         </p>
     </footer>
 
